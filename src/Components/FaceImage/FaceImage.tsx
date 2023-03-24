@@ -1,6 +1,5 @@
 import React, { useCallback, useState } from 'react';
 import Cropper, { Area } from 'react-easy-crop';
-import faceMask from './7188242.png';
 
 interface ImageProps {
   imageSource: string;
@@ -27,7 +26,11 @@ export default function FaceImage(props: ImageProps): React.ReactElement {
         onCropChange={setCrop}
         onCropComplete={onCropComplete}
       />
-      <img src={faceMask} alt="faceMask.png" className="face_mask" />
+      <img
+        src="https://github.com/KNIDZE/FaceEditor/blob/main/src/Components/FaceImage/7188242.png?raw=true"
+        alt="faceMask.png"
+        className="face_mask"
+      />
     </div>
   );
 }
