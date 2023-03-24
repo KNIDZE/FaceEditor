@@ -20,8 +20,6 @@ export default function FaceEditor(props: { imgUrl: string }): React.ReactElemen
       im.style.top = '600px';
       im.style.left = '100px';
       document.body.append(im);
-      // eslint-disable-next-line no-console
-      console.log('working');
     }
   }
   return (
